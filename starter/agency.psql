@@ -1,0 +1,10 @@
+insert into movies values (1,'Corpse Bride', 'September 12, 2005');
+insert into movies values (2,'The Purge', 'May 31, 2013');
+insert into movies values (3,'Escape Plan', 'October 9, 2013');
+insert into movies values (4,'Run All Night', 'March 13, 2015');
+insert into actors values (1,'Jennifer Aniston', 51, 'female');
+insert into actors values (2,'Courteney Cox', 56, 'female');
+insert into actors values (3,'Lisa Kudrow', 57, 'female');
+insert into actors values (4,'Matt LeBlanc', 53, 'male');
+insert into actors values (5,'David Schwimmer', 54, 'male');
+insert into actors values (6,'Matthew Perry', 51, 'male');
