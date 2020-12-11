@@ -32,6 +32,15 @@ python manage.py db upgrade
 psql -U postgres agency < agency.psql
 ```
 
+## Authentication - Roles
+- Casting Assistant
+    Can view actors and movies
+- Casting Director
+    All permissions a Casting Assistant has and Add or delete an actor from the database Modify actors or movies
+- Executive Producer
+    All permissions a Casting Director has and Add or delete a movie from the database
+
+
 ## Running the server
 
 First ensure you are working using your created virtual environment. To run the server, execute:
@@ -43,7 +52,7 @@ flask run
 ```
 
 ## Heroku
-
+https://git.heroku.com/agency-fsdn.git
 
 
 ## Endpoint 
@@ -166,10 +175,10 @@ PATCH '/movies/<int:movie_id>'
 ## Testing
 To run the tests, run
 ```
-dropdb agency_test
-createdb agency_test
+dropdb agency
+createdb agency
 python manage.py db upgrade
-psql agency_test < agency.psql
+psql agency < agency.psql
 python test_app.py
 ```
 
